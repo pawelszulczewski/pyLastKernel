@@ -26,8 +26,8 @@ def get_latest_ver_file (_file):
     if os.path.isfile(_file):
         with open(_file, 'r') as f:
             last_ver = f.readline()
-            f.close()
-            return last_ver
+        f.close()
+        return last_ver
     else:
          return ''
 
